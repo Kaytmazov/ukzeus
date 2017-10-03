@@ -3,12 +3,42 @@ $primary-color: #f9c82e;
 
 /* ====================== Общие стили ====================== */
 body {
+  color: #000;
+}
 
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.section {
+  padding: 4rem 0;
+
+  &-title {
+    margin-bottom: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .visually-hidden {
@@ -22,15 +52,351 @@ img {
   overflow: hidden;
 }
 
-/* ====================== Header ====================== */
-header {
+.btn-danger {
+  background-color: #ff000d;
+  border-color: #ff000d;
+}
 
+.btn-outline-white {
+  color: #fff;
+  border: 5px solid #fff;
+  border-radius: 1.5rem;
+
+  &:hover,
+  &:focus {
+    background-color: #ff0000;
+    border-color: #ff0000;
+  }
+}
+
+/* ====================== Header ====================== */
+.main-header {
+  padding-top: 2.8rem;
+  padding-bottom: 6.5rem;
+  color: #fff;
+  background: #00383d url(../img/header-bg.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+.navbar {
+  margin-bottom: 5.3rem;
+  padding: 0;
+
+  &-brand {
+    margin-right: 5rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &-expand-lg .navbar-nav .nav-link {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 0.875rem;
+  }
+
+  .navbar-text {
+    color: #fff;
+    font-size: 0.875rem;
+    text-align: right;
+  }
+
+  &-phones {
+    margin-left: 27px;
+    font-weight: 700;
+  }
+}
+
+.promo {
+  &-title {
+    margin-bottom: 2.7rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  &-text {
+    margin-bottom: 4rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+}
+
+.input-group-lg > .form-control-lg {
+  font-size: 1.125rem;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, .5);
+  border: 5px solid #fff;
+  border-right: none;
+  border-radius: 1.5rem;
+}
+
+.input-group-lg > .input-group-btn {
+  border: 5px solid #fff;
+  border-left: none;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+
+  .btn {
+    margin-left: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    border-top-right-radius: 1.1rem;
+    border-bottom-right-radius: 1.1rem;
+    cursor: pointer;
+  }
+}
+
+.input-group.input-group-nobg {
+    margin-top: 5.7rem;
+
+    .form-control-lg {
+      text-align: center;
+      color: #fff;
+      background-color: transparent;
+    }
+  }
+
+/* ====================== services ====================== */
+.services {
+  &-list > .col-lg-4 {
+    margin-bottom: 25px;
+  }
+
+  &-item {
+    position: relative;
+    min-height: 100%;
+    padding: 14px 25px 65px;
+    color: #fff;
+    background-color: #3076b6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+
+    &:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 11px 21px rgba(0, 0, 0, 0.35);
+    }
+
+    .btn {
+      position: absolute;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      bottom: 25px;
+      font-size: 0.69rem;
+    }
+  }
+
+  &-title {
+    min-height: 3.5rem;
+  }
+
+  &-text {
+    padding-right: 2rem;
+    font-size: 0.665rem;
+    line-height: 1.2;
+  }
+}
+
+/* ====================== about-us ====================== */
+.about-us p {
+  padding-right: 2.1rem;
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+/* ====================== advantages ====================== */
+.advantages {
+  padding-top: 5.8rem;
+  padding-bottom: 4.4rem;
+  color: #fff;
+  background: #1b2125 url(../img/advantages-bg.jpg) no-repeat top center;
+  background-size: cover;
+
+  .section-title {
+    margin-bottom: 0.8rem;
+  }
+
+  .subtitle {
+    margin-bottom: 3rem;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+/* ====================== reviews ====================== */
+.carousel {
+  padding-bottom: 80px;
+
+  &-item {
+    img {
+      width: 155px;
+      height: 155px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .col-7 {
+      padding-left: 5rem;
+    }
+  }
+
+  &-control {
+    &-prev,
+    &-next {
+      width: auto;
+    }
+  }
+
+  &-indicators {
+    bottom: 10px;
+
+    li {
+      width: 8px;
+      height: 8px;
+      background-color: #e5eef2;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: #0a80e4;
+    }
+  }
+}
+
+/* ====================== clients ====================== */
+.clients {
+  background-color: #f7f7f7;
+}
+
+/* ====================== callback ====================== */
+.callback {
+  padding: 8.5rem 0;
+  color: #fff;
+  background: #312319 url(../img/callback-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  .section-title {
+    font-size: 4.5rem;
+    text-shadow: 0 10px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  &-desc {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+
+    a {
+      color: #f5fe00;
+    }
+
+    label {
+      color: #f5fe00;
+      cursor: pointer;
+    }
+  }
+}
+
+/* ====================== map-and-contacts ====================== */
+.map-and-contacts {
+  .section-title {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+}
+
+.map {
+  height: 100%;
+}
+
+.contacts {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+
+  &-title {
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  a {
+    color: #000;
+  }
+}
+
+/* ====================== main-footer ====================== */
+.main-footer {
+  color: #fff;
+  background-color: #1d6cb1;
+}
+
+.footer-logo {
+  text-transform: uppercase;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.625rem;
+  font-weight: 100;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
-# Внутренняя страница
+# Анимация
 --------------------------------------------------------------*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
 
 /*--------------------------------------------------------------
 # Media Queries

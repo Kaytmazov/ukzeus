@@ -1,25 +1,174 @@
 /*==================================================
-=            Bootstrap 3 Media Queries             =
+=            Bootstrap 4 Media Queries             =
 ==================================================*/
 
 /*==========  Desktop First Method  ==========*/
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1199px) {
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navbar-brand {
+    margin-right: 3rem;
+  }
+
+  .callback-desc {
+    width: auto;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .about-us p {
+    padding-right: 0;
+  }
+
+  .carousel {
+    &-item {
+      text-align: center;
+
+      img {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-control-next, &-control-prev {
+      display: none;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .main-header {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .navbar {
+    margin-bottom: 3rem;
+  }
+
+  .promo-text {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+
+    &-title {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .advantages img {
+    margin-bottom: 50px;
+  }
+
+  .input-group.input-group-nobg {
+    margin-top: 2rem;
+  }
+
+  .callback {
+    .section-title {
+      font-size: 3rem;
+    }
+
+    &-desc {
+      font-size: 1.25rem;
+    }
+  }
 
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 991px) {
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+
+    &-title {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .main-header {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .navbar {
+    margin-bottom: 2rem;
+
+    .navbar-phones {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+  .promo {
+    &-title {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    &-text {
+      margin-bottom: 2rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .input-group-lg>.input-group-btn .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+  }
+
+  .about-us img {
+    margin-bottom: 20px;
+  }
+
+  .clients img {
+    margin-bottom: 20px;
+  }
+
+  .callback-desc {
+    font-size: 1rem;
+  }
+
+  .map-wrapper {
+    height: 300px;
+  }
+
+  .contacts {
+    padding: 2rem 15px!important;
+  }
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
 
-}
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
